@@ -1,0 +1,12 @@
+@import '../../styles/variable.scss';
+
+.navList {
+	display: flex;
+	gap: 1rem;
+
+	.navItem {
+		padding: 10px;
+		background-color: rgb(173, 211, 241);
+	}
+}
+

@@ -1,0 +1,28 @@
+@import '../../styles/variable.scss';
+
+.errorPage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.error {
+	color: $color-secondary;
+	font-weight: 500; 
+
+	.error__h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.error__h2 {
+		font-size: 2rem;
+		margin-bottom: 3rem;
+
+	}
+
+	.error__link {
+		font-size: 1rem;
+	}
+
+}

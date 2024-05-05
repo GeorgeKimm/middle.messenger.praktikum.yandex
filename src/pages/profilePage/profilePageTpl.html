@@ -1,0 +1,51 @@
+<div class="wrapper">
+  <main class="main-container">
+    {{{navigation}}}
+    <div class="main-item profilePage">
+      <div class="profile">
+        <div class="image-block">
+          <div class="image-block__image">
+            <img src="/static/icons/profile.svg" />
+          </div>
+          <h3 class="image-block__title_h3">Имя</h3>
+        </div>
+
+        <form class="form">
+          <div class="form__fields">
+            <div>
+              <label name="email" class="form__label">Почта</label>
+              <input type="email" required class="form__input" />
+            </div>
+            <div>
+              <label name="login" class="form__label">Логин</label>
+              <input type="text" required class="form__input" />
+            </div>
+            <div>
+              <label name="first_name" class="form__label">Имя</label>
+              <input type="text" required class="form__input" />
+            </div>
+            <div>
+              <label name="second_name" class="form__label">Фамилия</label>
+              <input type="text" required class="form__input" />
+            </div>
+            <div>
+              <label name="display_name" class="form__label">Имя в чате</label>
+              <input type="text" required class="form__input" />
+            </div>
+            <div>
+              <label name="phone" class="form__label">Телефон</label>
+              <input type="tel" required class="form__input" />
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="buttons__button" id="">Изменить данные</button>
+            <button class="buttons__button" id="">Изменить пароль</button>
+            <button class="buttons__button buttons__button_red" id="">
+              Выйти
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>

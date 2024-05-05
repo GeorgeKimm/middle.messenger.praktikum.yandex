@@ -1,0 +1,76 @@
+@import '../../styles/variable.scss';
+
+.signInPage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.signIn {
+	border-radius: 0.5rem;
+	width: 30rem;
+	color: $color-secondary; 
+	background-color: $color-primary; 
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+	padding: 30px;
+
+	.title-block {
+		margin-top: 1.5rem; 
+		margin-bottom: 4rem;
+		text-align: center; 
+	}
+
+	.title-block__title_h3 {
+		font-size: 1.5rem;
+		line-height: 2rem; 
+		font-weight: 700; 
+		color: #1F2937; 
+	}
+
+	.form {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.form__label {
+		font-weight: 500; 
+	}
+
+	.form__input {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem; 
+		border: 1px solid $color-interactive;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		width: 100%; 
+		color: #6B7280; 
+		background-color: transparent; 
+	}
+
+	.form__button-submit {
+		margin-top: 6rem;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem; 
+		padding-left: 1rem;
+		padding-right: 1rem; 
+		border-radius: 0.5rem; 
+		width: 100%; 
+		font-weight: 500; 
+		color: #ffffff; 
+		background-color: $color-interactive; 
+		transition-duration: 150ms; 		
+	}
+
+	.form__link-block {
+		text-align: center; 
+	}
+
+	.form__fields {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		margin-bottom: 5rem;
+	}
+}
