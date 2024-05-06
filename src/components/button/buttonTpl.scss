@@ -9,6 +9,6 @@
 	width: 100%; 
 	font-weight: 500; 
 	color: #ffffff; 
-	background-color: $color-interactive; 
+	background-color: #{$color-interactive};
 	transition-duration: 150ms;
 }

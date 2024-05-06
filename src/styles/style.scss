@@ -37,7 +37,7 @@ html,body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-	background-color: #fff;
+	background-color: #{$color-primary};
 }
 
 input, textarea, button, select {

@@ -7,7 +7,7 @@
 }
 
 .error {
-	color: $color-secondary;
+	color: #{$color-secondary};
 	font-weight: 500; 
 
 	.error__h1 {
