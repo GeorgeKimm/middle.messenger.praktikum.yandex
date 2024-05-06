@@ -15,3 +15,7 @@ npm run start
 
 запуск превью проекта:
 npm run preview
+
+### Ссылка на netlify
+
+https://prismatic-biscochitos-aacef8.netlify.app/
