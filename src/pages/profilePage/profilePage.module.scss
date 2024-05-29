@@ -1,0 +1,74 @@
+@import "@styles-variable";
+
+.profile-container {
+	display: flex;
+}
+
+.main-block {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.profile {
+	border-radius: 0.5rem;
+	width: 45rem;
+}
+
+.image-block {
+	margin-top: 4rem; 
+	margin-bottom: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+
+.image-block__image {
+	padding: 2.5rem;
+	border-radius: 100%;
+	background-color: #EFEFEF;
+}
+
+.title-block__title_h3 {
+	font-size: 1.5rem;
+	line-height: 2rem; 
+	font-weight: 700; 
+	color: #1F2937; 
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.fields {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 2rem;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.button {
+	background-color: transparent;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem; 
+	border-radius: 0.3rem;
+	font-weight: 500; 
+}
+
+.text-blue {
+	color: #{$color-interactive};
+}
+
+.text-red {
+	color: #{$color-error};
+}
+

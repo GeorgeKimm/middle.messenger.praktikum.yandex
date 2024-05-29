@@ -1,7 +1,8 @@
-import HandleBars from "handlebars";
-import navigationTpl from "./navigationTpl.html?raw";
-import "./navigationTpl.scss";
+import { Block } from "@app/utils";
+import { tmpl } from "./navigation.tmpl";
 
-export const navigation = (props = {}) => {
-  return HandleBars.compile(navigationTpl)(props);
-};
+export class Navigation extends Block {
+  protected render() {
+    return tmpl;
+  }
+}

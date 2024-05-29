@@ -1,7 +1,27 @@
-import Handlebars from "handlebars";
-import tpl from "./buttonTpl.html?raw";
-import "./buttonTpl.scss";
+import { Block } from "@app/utils";
 
-export const button = (id: string, value: string) => {
-  return Handlebars.compile(tpl)({ id, value });
-};
+interface ButtonProps {
+  сlass: string;
+  label: string;
+  onClick: () => void;
+}
+
+export class Button extends Block {
+  constructor(props: ButtonProps) {
+    super(props);
+    this.props.events = {
+      click: this.props.onClick || (() => {}),
+    };
+  }
+
+  protected render() {
+    const { сlass, label } = this.props;
+    console.log("сlass", сlass);
+
+    return `
+        <button class="button ${сlass}">
+            ${label}
+        </button>
+    `;
+  }
+}

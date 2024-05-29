@@ -1,0 +1,17 @@
+@import "@styles-variable";
+
+.input {
+  flex: 1;
+  font-size: 1rem;
+  color:  #{$color-secondary};
+  background-color:  #EFEFEF;
+  margin: 6px 12px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+.input:focus,
+.input:focus-visible {
+  outline: none;
+}

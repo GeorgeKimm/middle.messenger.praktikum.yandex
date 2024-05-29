@@ -1,6 +1,6 @@
-import { Block, getFormData, validateCheck } from "@app/utils";
-import { tmpl } from "./signUpPage.tmpl.ts";
-import styles from "./signUpPage.module.scss";
+import { Block, setUrl, getFormData, validateCheck } from "@app/utils";
+import { tmpl } from "../profilePage/profilePage.tpl";
+import styles from "./EditProfilePage.module.scss";
 
 const {
   validateName,
@@ -10,9 +10,10 @@ const {
   validatePhone,
 } = validateCheck;
 
-export class SignUpPage extends Block {
+export class EditProfilePage extends Block {
   constructor() {
     super({
+      userName: "Пользователь",
       inputs: [
         {
           name: "email",
@@ -39,27 +40,21 @@ export class SignUpPage extends Block {
           validate: (value: string) => validateName(value),
         },
         {
+          name: "display_name",
+          label: "Имя в чате",
+          type: "text",
+          validate: (value: string) => validateName(value),
+        },
+        {
           name: "phone",
           label: "Телефон",
           type: "tel",
           validate: (value: string) => validatePhone(value),
         },
-        {
-          name: "password",
-          label: "Пароль",
-          type: "password",
-          validate: (value: string) => validatePassword(value),
-        },
-        {
-          name: "repeat_password",
-          label: "Повторить пароль",
-          type: "password",
-          validate: (value: string) => validatePassword(value),
-        },
       ],
       buttons: [
         {
-          label: "Зарегистрироваться",
+          label: "Сохранить",
           сlass: styles["button-submit"],
           onClick: (event: MouseEvent) => {
             event.preventDefault();
@@ -68,6 +63,9 @@ export class SignUpPage extends Block {
           },
         },
       ],
+      backClick: (event: MouseEvent) => {
+        setUrl(event, "/");
+      },
     });
   }
 

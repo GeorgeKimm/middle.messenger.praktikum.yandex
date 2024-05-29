@@ -19,8 +19,8 @@
     // "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
-      "@styles": ["src/styles"],
-      "@app/*": ["src/*"]
+      "@app/*": ["src/*"],
+      "@styles-variable": ["src/styles/variable.scss"],
     },
 
     /* Linting */
