@@ -12,11 +12,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-
-    /* custom */
-    // "rootDir": "./src",
-    // "outDir": "./dist",
-    // "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
       "@app/*": ["src/*"],
@@ -35,7 +30,7 @@
   "include": [
     "src/**/*.ts",
     "src/types"
-  ],
+  ]
 }
 
 
