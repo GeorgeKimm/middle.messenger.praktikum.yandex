@@ -12,43 +12,43 @@ export class ProfilePage extends Block {
           label: "Почта",
           type: "email",
           value: "test1",
-          disabled: true,
+          disabled: true
         },
         {
           name: "login",
           label: "Логин",
           type: "text",
           value: "test2",
-          disabled: true,
+          disabled: true
         },
         {
           name: "first_name",
           label: "Имя",
           type: "text",
           value: "test3",
-          disabled: true,
+          disabled: true
         },
         {
           name: "second_name",
           label: "Фамилия",
           type: "text",
           value: "test4",
-          disabled: true,
+          disabled: true
         },
         {
           name: "display_name",
           label: "Имя в чате",
           type: "text",
           value: "test5",
-          disabled: true,
+          disabled: true
         },
         {
           name: "phone",
           label: "Телефон",
           type: "tel",
           value: "test6",
-          disabled: true,
-        },
+          disabled: true
+        }
       ],
       buttons: [
         {
@@ -56,30 +56,30 @@ export class ProfilePage extends Block {
           сlass: `${styles["button"]} ${styles["text-blue"]}`,
           onClick: (event: MouseEvent) => {
             setUrl(event, "/profile/edit-data");
-          },
+          }
         },
         {
           label: "Изменить пароль",
           сlass: `${styles["button"]} ${styles["text-blue"]}`,
           onClick: (event: MouseEvent) => {
             setUrl(event, "/profile/edit-password");
-          },
+          }
         },
         {
           label: "Выйти",
           сlass: `${styles["button"]} ${styles["text-red"]}`,
           onClick: (event: MouseEvent) => {
             setUrl(event, "/");
-          },
-        },
+          }
+        }
       ],
       backClick: (event: MouseEvent) => {
         setUrl(event, "/");
-      },
+      }
     });
   }
 
-  protected render() {
+  protected render(): string {
     return tmpl;
   }
 }
