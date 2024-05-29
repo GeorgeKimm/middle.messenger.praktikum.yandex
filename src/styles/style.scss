@@ -1,11 +1,11 @@
-@import 'variable.scss';
+@import 'variable';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
 }
 
 *,
@@ -16,10 +16,17 @@
 	border: 0;
 }
 
-*,*:before,*:after{
+*,*::before,*::after{
 	box-sizing: border-box;
 }
 
+a, a:visited{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
 
 a:focus,a:active{
 	outline: none;
@@ -47,23 +54,13 @@ input, textarea, button, select {
 
 button {
 	cursor: pointer;
-}
-
-button {
-	padding:0;border:0;
+	padding:0;
+	border:0;
 }
 
 input:focus, input:active,
 button:focus, button:active {
   outline: none;
-}
-
-a, a:visited{
-	text-decoration: none;
-}
-
-a:hover{
-	text-decoration: none;
 }
 
 ul li{
