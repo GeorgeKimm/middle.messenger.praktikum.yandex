@@ -27,6 +27,7 @@
     "sourceMap": true,
     "strictNullChecks": true
   },
+  
   "include": [
     "src/**/*.ts",
     "src/types"
