@@ -2,13 +2,8 @@ import { Block, setUrl, getFormData, validateCheck } from "@app/utils";
 import { tmpl } from "../profilePage/profilePage.tpl";
 import styles from "./EditProfilePage.module.scss";
 
-const {
-  validateName,
-  validateLogin,
-  validateEmail,
-  validatePassword,
-  validatePhone,
-} = validateCheck;
+const { validateName, validateLogin, validateEmail, validatePhone } =
+  validateCheck;
 
 export class EditProfilePage extends Block {
   constructor() {

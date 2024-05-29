@@ -7,7 +7,7 @@ export const tmpl = `
     <div class="main-item ${styles["profile-container"]}">
       <div class="step-back-block">
         <a href="/">
-          <img src="/static/icons/arrowLeft.svg" alt="arrowLeft" />
+          <img src="/arrowLeft.svg" alt="arrowLeft" />
         </a>
       </div>
 
@@ -16,7 +16,7 @@ export const tmpl = `
 
           <div class=${styles["image-block"]}>
             <div class=${styles["image-block__image"]}>
-              <img src="/static/icons/profile.svg" alt="profile" />
+              <img src="/profile.svg" alt="profile" />
             </div>
             <h3 class=${styles["image-block__title_h3"]}>{{userName}}</h3>
           </div>

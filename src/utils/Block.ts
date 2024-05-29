@@ -4,13 +4,14 @@ import Handlebars from "handlebars";
 
 export type BlockPropsType = Record<string, any>;
 
-// Пока не получается нормально типизировать
+// Пока не получается нормально типизировать, загруженность на основной работе, так что откровенно некоторые вещи сделал не как хотел
+// в будущем сделать на дженериках
 export class Block {
   static EVENTS = {
     INIT: "init",
     FLOW_CDM: "flow:component-did-mount",
     FLOW_CDU: "flow:component-did-update",
-    FLOW_RENDER: "flow:render",
+    FLOW_RENDER: "flow:render"
   } as const;
 
   private _element: HTMLElement | null = null;
@@ -27,7 +28,7 @@ export class Block {
     const { props, children } = this._getChildrenAndProps(propsWithChildren);
 
     this._meta = {
-      props,
+      props
     };
 
     this.children = children;
@@ -196,7 +197,7 @@ export class Block {
       },
       deleteProperty() {
         throw new Error("Нет доступа");
-      },
+      }
     });
   }
 

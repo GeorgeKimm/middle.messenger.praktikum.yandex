@@ -11,7 +11,6 @@ import {
 } from "./pages/index.ts";
 
 import { register } from "./utils";
-register;
 
 register();
 
