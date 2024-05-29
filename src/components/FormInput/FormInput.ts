@@ -14,7 +14,7 @@ export class FormInput extends Block {
   constructor(props: FormInputProps) {
     super({
       ...props,
-      onBlur: () => this.validate(),
+      onBlur: () => this.validate()
     });
   }
 
@@ -33,7 +33,7 @@ export class FormInput extends Block {
     return !error;
   }
 
-  protected render() {
+  protected render(): string {
     return `
             <div>
               <label for=name class=${styles["label"]}>{{label}}</label>

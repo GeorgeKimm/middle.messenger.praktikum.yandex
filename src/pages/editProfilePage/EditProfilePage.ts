@@ -14,38 +14,38 @@ export class EditProfilePage extends Block {
           name: "email",
           label: "Почта",
           type: "email",
-          validate: (value: string) => validateEmail(value),
+          validate: (value: string) => validateEmail(value)
         },
         {
           name: "login",
           label: "Логин",
           type: "text",
-          validate: (value: string) => validateLogin(value),
+          validate: (value: string) => validateLogin(value)
         },
         {
           name: "first_name",
           label: "Имя",
           type: "text",
-          validate: (value: string) => validateName(value),
+          validate: (value: string) => validateName(value)
         },
         {
           name: "second_name",
           label: "Фамилия",
           type: "text",
-          validate: (value: string) => validateName(value),
+          validate: (value: string) => validateName(value)
         },
         {
           name: "display_name",
           label: "Имя в чате",
           type: "text",
-          validate: (value: string) => validateName(value),
+          validate: (value: string) => validateName(value)
         },
         {
           name: "phone",
           label: "Телефон",
           type: "tel",
-          validate: (value: string) => validatePhone(value),
-        },
+          validate: (value: string) => validatePhone(value)
+        }
       ],
       buttons: [
         {
@@ -55,16 +55,16 @@ export class EditProfilePage extends Block {
             event.preventDefault();
             const formData = getFormData(this.props.inputs, this.refs);
             console.log("formData", formData);
-          },
-        },
+          }
+        }
       ],
       backClick: (event: MouseEvent) => {
         setUrl(event, "/");
-      },
+      }
     });
   }
 
-  protected render() {
+  protected render(): string {
     return tmpl;
   }
 }

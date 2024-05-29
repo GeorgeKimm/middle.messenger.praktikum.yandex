@@ -12,14 +12,14 @@ export class SignInPage extends Block {
           name: "login",
           label: "Логин",
           type: "text",
-          validate: (value: string) => validateEmail(value),
+          validate: (value: string) => validateEmail(value)
         },
         {
           name: "password",
           label: "Пароль",
           type: "password",
-          validate: (value: string) => validatePassword(value),
-        },
+          validate: (value: string) => validatePassword(value)
+        }
       ],
       buttons: [
         {
@@ -29,13 +29,13 @@ export class SignInPage extends Block {
             event.preventDefault();
             const formData = getFormData(this.props.inputs, this.refs);
             console.log("formData", formData);
-          },
-        },
-      ],
+          }
+        }
+      ]
     });
   }
 
-  protected render() {
+  protected render(): string {
     return tmpl;
   }
 }

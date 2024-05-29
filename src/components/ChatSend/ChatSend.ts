@@ -9,7 +9,7 @@ export class ChatSend extends Block {
           ?.value;
         this.refs.buttonSendMessage.setProps({
           ...this.refs.buttonSendMessage.props,
-          disabled: !value,
+          disabled: !value
         });
       },
       onClick: (event: MouseEvent) => {
@@ -23,11 +23,11 @@ export class ChatSend extends Block {
 
         console.log("validate", validate);
         console.log("message", message);
-      },
+      }
     });
   }
 
-  protected render() {
+  protected render(): string {
     return `
       <div class=${styles["search-container"]}>
         {{{ Button label='+' onClick=onClick }}}

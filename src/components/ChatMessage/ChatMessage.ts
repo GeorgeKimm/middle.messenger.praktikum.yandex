@@ -2,7 +2,7 @@ import { Block } from "@app/utils";
 import styles from "./chatMessage.module.scss";
 
 export class ChatMessage extends Block {
-  protected render() {
+  protected render(): string {
     return `
     <div
     {{#if userCurrent}}

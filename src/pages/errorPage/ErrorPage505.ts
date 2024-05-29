@@ -5,11 +5,11 @@ export class ErrorPage505 extends Block {
   constructor() {
     super({
       error: "505",
-      text: "Неизвестная ошибка",
+      text: "Неизвестная ошибка"
     });
   }
 
-  protected render() {
+  protected render(): string {
     return tmpl;
   }
 }

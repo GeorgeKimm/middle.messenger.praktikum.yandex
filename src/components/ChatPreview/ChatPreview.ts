@@ -5,7 +5,7 @@ export class ChatPreview extends Block {
   constructor(props: object) {
     super(props);
     this.props.events = {
-      click: this.props.onClick || (() => {}),
+      click: this.props.onClick || (() => {})
     };
   }
 

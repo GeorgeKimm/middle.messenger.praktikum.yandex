@@ -10,8 +10,8 @@ export class MessageInput extends Block {
     super({
       ...props,
       events: {
-        input: props.onChange ?? (() => {}),
-      },
+        input: props.onChange ?? (() => {})
+      }
     });
   }
 

@@ -15,19 +15,19 @@ export class ChatsPage extends Block {
           {
             message: "test",
             time: "09:00",
-            userCurrent: true,
+            userCurrent: true
           },
           {
             message: "test",
             time: "09:01",
-            userCurrent: false,
+            userCurrent: false
           },
           {
             message: "test",
             time: "09:02",
-            userCurrent: true,
-          },
-        ],
+            userCurrent: true
+          }
+        ]
       },
       {
         id: "3",
@@ -39,20 +39,20 @@ export class ChatsPage extends Block {
           {
             message: "hello",
             time: "09:00",
-            userCurrent: true,
+            userCurrent: true
           },
           {
             message: "hello",
             time: "09:01",
-            userCurrent: false,
+            userCurrent: false
           },
           {
             message: "hello",
             time: "09:02",
-            userCurrent: true,
-          },
-        ],
-      },
+            userCurrent: true
+          }
+        ]
+      }
     ];
 
     const chatsWithClick = chats.map((item) => {
@@ -63,9 +63,9 @@ export class ChatsPage extends Block {
             ...this.props,
             id: item.id,
             chatName: item.chatName,
-            messages: item.messages,
+            messages: item.messages
           });
-        },
+        }
       };
     });
 
@@ -80,13 +80,13 @@ export class ChatsPage extends Block {
           class: `${styles["button"]}`,
           onClick: (event: MouseEvent) => {
             setUrl(event, "/profile");
-          },
-        },
-      ],
+          }
+        }
+      ]
     });
   }
 
-  protected render() {
+  protected render(): string {
     return tmpl;
   }
 }

@@ -14,20 +14,20 @@ export class EditPasswordProfilePage extends Block {
           name: "oldPassword",
           label: "Старый пароль",
           type: "password",
-          validate: (value: string) => validatePassword(value),
+          validate: (value: string) => validatePassword(value)
         },
         {
           name: "newPassword",
           label: "Новый пароль",
           type: "password",
-          validate: (value: string) => validatePassword(value),
+          validate: (value: string) => validatePassword(value)
         },
         {
           name: "repeat_password",
           label: "Повторить пароль",
           type: "password",
-          validate: (value: string) => validatePassword(value),
-        },
+          validate: (value: string) => validatePassword(value)
+        }
       ],
       buttons: [
         {
@@ -37,16 +37,16 @@ export class EditPasswordProfilePage extends Block {
             event.preventDefault();
             const formData = getFormData(this.props.inputs, this.refs);
             console.log("formData", formData);
-          },
-        },
+          }
+        }
       ],
       backClick: (event: MouseEvent) => {
         setUrl(event, "/");
-      },
+      }
     });
   }
 
-  protected render() {
+  protected render(): string {
     return tmpl;
   }
 }

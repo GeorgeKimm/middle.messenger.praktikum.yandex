@@ -11,12 +11,12 @@ export class Input extends Block {
     super({
       ...props,
       events: {
-        blur: props.onBlur ?? (() => {}),
-      },
+        blur: props.onBlur ?? (() => {})
+      }
     });
   }
 
-  protected render() {
+  protected render(): string {
     return `
             <input
                 name="{{name}}"

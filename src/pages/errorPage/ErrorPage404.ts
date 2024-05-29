@@ -5,11 +5,11 @@ export class ErrorPage404 extends Block {
   constructor() {
     super({
       error: "404",
-      text: "Не найдена страница",
+      text: "Не найдена страница"
     });
   }
 
-  protected render() {
+  protected render(): string {
     return tmpl;
   }
 }

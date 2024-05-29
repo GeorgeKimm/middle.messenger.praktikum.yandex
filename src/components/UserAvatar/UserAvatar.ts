@@ -2,7 +2,7 @@ import { Block } from "@app/utils";
 import styles from "./userAvatar.module.scss";
 
 export class UserAvatar extends Block {
-  protected render() {
+  protected render(): string {
     return `
       <div
       {{#if small}}
