@@ -1,0 +1,48 @@
+@import "@styles-variable";
+
+.message-container-user-current {
+  display: flex;
+  justify-content: flex-end;
+
+  .info {
+    position: relative;
+    background-color: #E4EDFD;
+    padding: 1rem 1.3rem 1.3rem;
+    border-radius: 10px 10px 0;
+    max-width: 50%;
+    
+  }
+  
+  .time {
+    position: absolute;
+    right: 0.6rem;
+    bottom: 0.3rem;
+    color: #{$color-interactive};
+    font-size: 12px;
+  }
+}
+
+.message-container {
+  display: flex;
+  justify-content: flex-start;
+
+  .info {
+    position: relative;
+    background-color: #F8F8F8;
+    padding: 1rem 1.3rem 1.3rem;
+    border-radius: 0 10px 10px;
+    max-width: 50%;
+  }
+  
+  .time {
+    position: absolute;
+    right: 0.6rem;
+    bottom: 0.3rem;
+    color: #{$color-gray};
+    font-size: 12px;
+  }
+}
+
+.text {
+  font-size: 1rem;
+}

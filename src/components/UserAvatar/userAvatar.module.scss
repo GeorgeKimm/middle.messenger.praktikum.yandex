@@ -1,0 +1,33 @@
+@import "@styles-variable";
+
+.avatar-container-small {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  aspect-ratio: 1;
+  height: 100%;
+}
+
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  height: 100%;
+}
+
+.avatar-image {
+  aspect-ratio: 1;
+  height: 100%;
+  background-color: #{$color-gray};
+  border-radius: 50%;
+}
+
+.avatar-name {
+  font-size: 20px;
+  margin: 14px;
+}
+

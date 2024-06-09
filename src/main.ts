@@ -1,35 +1,28 @@
 import "./styles/style.scss";
-import { navigation, button } from "./components/index.ts";
 import {
-  signInPage,
-  signUpPage,
-  profilePage,
-  errorPage,
+  SignInPage,
+  SignUpPage,
+  ProfilePage,
+  ErrorPage404,
+  ErrorPage505,
+  EditProfilePage,
+  EditPasswordProfilePage,
+  ChatsPage,
 } from "./pages/index.ts";
 
+import { register } from "./utils";
+
+register();
+
 const routes: Record<string, any> = {
-  "/": signInPage({
-    button: button("sign-in", "Вход"),
-    navigation: navigation(),
-  }),
-  "/sign-up": signUpPage({
-    button: button("sign-up", "Регистрация"),
-    navigation: navigation(),
-  }),
-  "/profile": profilePage({
-    button: button("sign-up", "Создать аккаунт"),
-    navigation: navigation(),
-  }),
-  "/404": errorPage({
-    error: "404",
-    text: "Не найдена страница",
-    navigation: navigation(),
-  }),
-  "/505": errorPage({
-    error: "500",
-    text: "Неизвестная ошибка",
-    navigation: navigation(),
-  }),
+  "/": SignInPage,
+  "/sign-up": SignUpPage,
+  "/404": ErrorPage404,
+  "/505": ErrorPage505,
+  "/profile": ProfilePage,
+  "/profile/edit-data": EditProfilePage,
+  "/profile/edit-password": EditPasswordProfilePage,
+  "/chats": ChatsPage,
 };
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -37,6 +30,10 @@ window.addEventListener("DOMContentLoaded", () => {
   const path = window.location.pathname;
 
   if (app) {
-    app.innerHTML = routes[path];
+    const Component = routes[path];
+    const component = new Component();
+
+    app.innerHTML = "";
+    app?.append(component.getContent());
   }
 });

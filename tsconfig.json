@@ -5,34 +5,28 @@
     "module": "ESNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
-
-    /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-
-    /* custom */
-    // "rootDir": "./src",
-    // "outDir": "./dist",
-    // "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
-      "@styles": ["src/styles"],
-      "@app/*": ["src/*"]
+      "@app/*": ["src/*"],
+      "@styles-variable": ["src/styles/variable.scss"]
     },
-
-    /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "strictNullChecks": true
   },
   "include": [
     "src/**/*.ts",
     "src/types"
-  ],
+  ]
 }
 
 

@@ -1,0 +1,23 @@
+@import "@styles-variable";
+
+.search-container{
+  text-align: right;
+  margin: 0 10px;
+  border-bottom: 1px solid #{$color-gray};
+}
+
+.search {
+  margin: 0 0 10px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+  color: #{$color-gray};
+  background-color: #EFEFEF;
+}
+
+.search:focus,
+.search:focus-visible {
+  outline: none;
+}

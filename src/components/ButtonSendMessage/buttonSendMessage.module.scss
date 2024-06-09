@@ -1,0 +1,18 @@
+@import "@styles-variable";
+
+.button-send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color:  #{$color-primary};
+  background-color:  #{$color-interactive};
+  width: 40px;
+  border-radius: 100%;
+}
+
+.button-circle-arrow:disabled {
+  background-color:  #{$color-gray};
+  cursor: not-allowed;
+}

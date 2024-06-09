@@ -1,0 +1,11 @@
+@import "@styles-variable";
+
+.button-submit {
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem; 
+	width: 20rem; 
+	font-weight: 500; 
+	color: #fff; 
+	background-color: #{$color-interactive}; 
+	transition-duration: 150ms; 		
+}
